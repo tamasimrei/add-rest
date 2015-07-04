@@ -1,10 +1,11 @@
 Project AddRest
 ===============
 
-The simplest RESTful application for practicing coding skills
+The simplest (soon-to-be) RESTful application for practicing coding skills.
 
 Started up as a technical test for a job interview, then decided
 to put it up on GitHub, making it public.
+
 Feel free to use any ideas or bits and pieces from this code, I'm also open
 for suggestions how I could make it simpler, better, etc.
 
@@ -29,7 +30,7 @@ Run the built-in PHP web server with the script provided:
 
     $ bin/runserver.sh
 
-Open the APP in your web browser with an ID number between 0 and 3, e.g.:
+Open the app in your web browser with an ID number between 0 and 3, e.g.:
 
 [http://localhost:8080/index.php/address?id=2](http://localhost:8080/index.php/address?id=2)
 
