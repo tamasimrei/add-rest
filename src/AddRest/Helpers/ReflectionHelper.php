@@ -19,8 +19,7 @@ class ReflectionHelper
      */
     public static function getProtectedProperty($object, $propertyName)
     {
-        $objectReflection = new \ReflectionObject($object);
-        $propertyReflection = $objectReflection->getProperty($propertyName);
+        $propertyReflection = new \ReflectionProperty($object, $propertyName);
         $propertyReflection->setAccessible(true);
         return $propertyReflection;
     }
