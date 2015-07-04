@@ -5,8 +5,8 @@
  */
 // Setting up configuration values and  dependency tree
 
-use Imrei\AddRest\Components\Container;
-use Imrei\AddRest\Components\Request;
+use \Imrei\AddRest\Components\Container;
+use \Imrei\AddRest\Components\Request;
 
 $container = new Container();
 
