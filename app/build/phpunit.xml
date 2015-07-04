@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.6/phpunit.xsd"
+    stopOnError="true"
+    stopOnFailure="false"
+    stopOnIncomplete="false"
+    stopOnSkipped="false"
+    colors="false"
+    verbose="false"
+    bootstrap="../bootstrap.php"
+    >
+
+    <testsuites>
+        <testsuite name="Default">
+            <directory suffix="Test.php">../../src/AddRest/Tests</directory>
+        </testsuite>
+    </testsuites>
+
+     <filter>
+        <blacklist>
+            <directory>vendor</directory>
+        </blacklist>
+     </filter>
+
+    <logging>
+        <log type="junit" target="phpunit/logfile.xml" logIncompleteSkipped="false"/>
+        <log type="coverage-html" target="phpunit/coverage" lowUpperBound="35" highLowerBound="70" />
+    </logging>
+
+</phpunit>

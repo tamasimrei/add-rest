@@ -1,0 +1,19 @@
+{
+    "name": "add-rest",
+    "description": "A simple, but extendable RESTful web application",
+    "version": "0.0.1",
+    "require-dev": {
+        "phpunit/phpunit": "~4.6.6",
+        "phpmd/phpmd": "~2.1.3",
+        "sebastian/phpcpd": "~2.0.1",
+        "squizlabs/php_codesniffer": "~1.5.5",
+        "pdepend/pdepend": "~2.0.3",
+        "phploc/phploc": "~2.0.6"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Imrei\\": "src/"
+        }
+    }
+}
