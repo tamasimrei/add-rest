@@ -2,6 +2,9 @@
     "name": "add-rest",
     "description": "A simple, but extendable RESTful web application",
     "version": "0.0.1",
+    "require": {
+        "psr/http-message": "^1.0"
+    },
     "require-dev": {
         "phpunit/phpunit": "~4.6.6",
         "phpmd/phpmd": "~2.1.3",
