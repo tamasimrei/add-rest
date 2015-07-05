@@ -1,5 +1,7 @@
 To Do
 =====
 
+- implement PSR-7 interfaces with the Request and Response classes
+- add support for inline parameters in the router, e.g. /address/{id}
 - add CRUD methods to service and repository
 - add RESTful API controller methods and routes for CRUD service methods
