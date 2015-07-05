@@ -17,6 +17,7 @@ class AddressServiceTest extends \PHPUnit_Framework_TestCase
         $service = new AddressService($repository);
         $address = new Address('Foo', '0655512345', 'Bar St');
         $addressArray = [
+            'id' => null,
             'name' => 'Foo',
             'phone' => '0655512345',
             'street' => 'Bar St'

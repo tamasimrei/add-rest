@@ -37,6 +37,7 @@ class AddressService
     public function convertEntityToArray(Address $address)
     {
         return [
+            "id" => $address->getId(),
             "name" => $address->getName(),
             "phone" => $address->getPhone(),
             "street" => $address->getStreet()
