@@ -9,6 +9,8 @@ to put it up on GitHub, making it public.
 Feel free to use any ideas or bits and pieces from this code, I'm also open
 for suggestions how I could make it simpler, better, etc.
 
+This is definitely a work in progress.
+
 [tilted, rusty, hand-painted sign] ENTER AT YOUR OWN RISK!
 
 Requirements
