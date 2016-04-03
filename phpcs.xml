@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+    <description>Checking coding standards PSR-1 and PSR-2</description>
+
+    <file>./src</file>
+
+    <arg name="error-severity" value="1" />
+    <arg name="warning-severity" value="0" />
+
+    <arg name="report" value="full" />
+    <arg name="report-file" value="./app/build/phpcs/report.txt" />
+    <arg name="report-width" value="120" />
+
+    <rule ref="PSR1" />
+    <rule ref="PSR2" />
+</ruleset>
