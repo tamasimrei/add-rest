@@ -12,7 +12,7 @@ namespace Imrei\AddRest\Exceptions\Http;
  */
 class HttpNotFoundException extends HttpException
 {
-    public function __construct($message = '', $code = 0, Exception $previous = null)
+    public function __construct($message = '', $code = 0, \Exception $previous = null)
     {
         // Forcing message and code
         parent::__construct('Not Found', 404, $previous);
