@@ -20,7 +20,7 @@ bin/phpmd src/ text codesize,controversial,design,naming,unusedcode
 echo ''
 
 echo Running PHP Copy-Paste Detector
-vendor/bin/phpcpd \
+bin/phpcpd \
   --exclude vendor \
   --exclude build \
   --log-pmd=./app/build/phpcpd/results.xml \

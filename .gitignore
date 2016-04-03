@@ -3,10 +3,8 @@
 .settings/
 /vendor/
 
-# QA tool executables
-bin/pdepend
-bin/phpcbf
-bin/phpcs
-bin/phploc
-bin/phpmd
-bin/phpunit
+# Ignore QA tool executables
+/bin/
+!bin/runqatools.sh
+!bin/runserver.sh
+!bin/runtests.sh
