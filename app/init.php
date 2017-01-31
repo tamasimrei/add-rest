@@ -1,6 +1,5 @@
 <?php
 /**
- * This source file is copyrighted by Tamas Imrei <tamas.imrei@gmail.com>.
  * @author Tamas Imrei <tamas.imrei@gmail.com>
  */
 // (Re)initialize the database used by the application
