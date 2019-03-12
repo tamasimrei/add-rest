@@ -1,7 +1,7 @@
 Project AddRest
 ===============
 
-The simplest (soon-to-be) RESTful application for practicing coding skills.
+The simplest (was-to-be) RESTful application for practicing coding skills.
 
 Started up as a technical test for a job interview, then decided
 to put it up on GitHub, making it public.
