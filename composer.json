@@ -1,11 +1,11 @@
 {
-    "name": "add-rest",
+    "name": "tamasimrei/add-rest",
     "description": "A simple, but extendable RESTful web application",
     "version": "0.0.4",
     "require": {
         "php": ">=5.5.0",
         "psr/http-message": "^1.0",
-        "ext-sqlite3": "0.7-dev",
+        "ext-sqlite3": "*",
         "ext-pdo_sqlite": "^7.0"
     },
     "require-dev": {
