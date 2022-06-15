@@ -6,11 +6,12 @@ namespace Imrei\AddRest\Tests\Model\Repository;
 
 use Imrei\AddRest\Model\Entity\Address;
 use Imrei\AddRest\Model\Repository\AddressRepository;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Integration test class for AddressRepository
  */
-class AddressRepositoryTest extends \PHPUnit_Framework_TestCase
+class AddressRepositoryTest extends TestCase
 {
     /**
      * Instantiate an in memory SQLite database

@@ -8,7 +8,7 @@ cd $PARENT
 set -e
 
 echo Running unit tests
-bin/phpunit
+XDEBUG_MODE=coverage bin/phpunit --configuration app/build/phpunit.xml
 
 bin/phpcs -v
 
@@ -26,9 +26,7 @@ bin/phpcpd \
   --log-pmd=./app/build/phpcpd/results.xml \
   --min-lines=5 \
   --min-tokens=50 \
-  --no-ansi \
-  --no-interaction \
-  src
+    src
 
 echo ''
 

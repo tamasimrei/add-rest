@@ -6,8 +6,9 @@ namespace Imrei\AddRest\Tests\View;
 
 use Imrei\AddRest\View\JSONView;
 use Imrei\AddRest\Helpers\ReflectionHelper;
+use PHPUnit\Framework\TestCase;
 
-class JSONViewTest extends \PHPUnit_Framework_TestCase
+class JSONViewTest extends TestCase
 {
     /**
      * Testing that the view's render method return valid JSON containing

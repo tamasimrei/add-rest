@@ -5,11 +5,12 @@
 namespace Imrei\AddRest\Tests\Components;
 
 use Imrei\AddRest\Components\Request;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Testing the Request class
  */
-class RequestTest extends \PHPUnit_Framework_TestCase
+class RequestTest extends TestCase
 {
     /**
      * Test getting the defaults when there's no input for the constructor

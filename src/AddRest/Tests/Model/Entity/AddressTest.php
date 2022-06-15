@@ -6,14 +6,15 @@ namespace Imrei\AddRest\Tests\Model\Entity;
 
 use Imrei\AddRest\Model\Entity\Address;
 use Imrei\AddRest\Helpers\ReflectionHelper;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Example test class
  */
-class AddressTest extends \PHPUnit_Framework_TestCase
+class AddressTest extends TestCase
 {
     /**
-     * @dataProvider testValueProvider
+     * @dataProvider dataProviderForTestSetter
      */
     public function testGetter($propertyName, $value)
     {
@@ -24,7 +25,7 @@ class AddressTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider testValueProvider
+     * @dataProvider dataProviderForTestSetter
      */
     public function testSetter($propertyName, $value)
     {
@@ -40,7 +41,7 @@ class AddressTest extends \PHPUnit_Framework_TestCase
      *
      * @return array
      */
-    public function testValueProvider()
+    public function dataProviderForTestSetter()
     {
         return [
             ['id', 1234],

@@ -8,11 +8,12 @@ use Imrei\AddRest\Components\Router;
 use Imrei\AddRest\Components\Container;
 use Imrei\AddRest\Components\Request;
 use Imrei\AddRest\Exceptions\Http\HttpNotFoundException;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Testing the Router class
  */
-class RouterTest extends \PHPUnit_Framework_TestCase
+class RouterTest extends TestCase
 {
     /**
      * @var Router pre-configured router
@@ -24,7 +25,7 @@ class RouterTest extends \PHPUnit_Framework_TestCase
      */
     protected $container;
 
-    public function setUp()
+    protected function setUp(): void
     {
         $this->container = new Container();
 
@@ -41,7 +42,7 @@ class RouterTest extends \PHPUnit_Framework_TestCase
         $this->router->addRoute('/cont2', Request::HTTP_PUT, 'controller.cont2', 'updateOneAction');
     }
 
-    public function tearDown()
+    protected function tearDown(): void
     {
         $this->router = null;
         $this->container = null;
@@ -81,7 +82,7 @@ class RouterTest extends \PHPUnit_Framework_TestCase
 
     public function testNotFoundPath()
     {
-        $this->setExpectedException(HttpNotFoundException::class);
+        $this->expectException(HttpNotFoundException::class);
 
         $request = new Request(['REQUEST_METHOD' => Request::HTTP_GET, 'PATH_INFO' => '/foobar'], []);
         $this->router->dispatch($request);
@@ -89,7 +90,7 @@ class RouterTest extends \PHPUnit_Framework_TestCase
 
     public function testNotFoundController()
     {
-        $this->setExpectedException(HttpNotFoundException::class);
+        $this->expectException(HttpNotFoundException::class);
 
         $this->router->addRoute('/cont3', Request::HTTP_GET, 'controller.cont3', 'getOneAction');
         $request = new Request(['REQUEST_METHOD' => Request::HTTP_GET, 'PATH_INFO' => '/cont3'], []);
@@ -98,7 +99,7 @@ class RouterTest extends \PHPUnit_Framework_TestCase
 
     public function testNotFoundControllerNotCallable()
     {
-        $this->setExpectedException(HttpNotFoundException::class);
+        $this->expectException(HttpNotFoundException::class);
 
         $this->container->set('controller.cont4', 'not a callable');
         $this->router->addRoute('/cont4', Request::HTTP_GET, 'controller.cont4', 'getOneAction');

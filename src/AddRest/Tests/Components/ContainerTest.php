@@ -6,11 +6,12 @@ namespace Imrei\AddRest\Tests\Components;
 
 use Imrei\AddRest\Components\Container;
 use Imrei\AddRest\Exceptions\Components\ContainerException;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Test class for the dependency injection container
  */
-class ContainerTest extends \PHPUnit_Framework_TestCase
+class ContainerTest extends TestCase
 {
     /**
      * Test storing scalar values
@@ -90,7 +91,7 @@ class ContainerTest extends \PHPUnit_Framework_TestCase
      */
     public function testKeyNotFound()
     {
-        $this->setExpectedException(ContainerException::class);
+        $this->expectException(ContainerException::class);
         $container = new Container();
         $neverUsed = $container->get('invalid.slot.name');
         $this->assertTrue($neverUsed, 'Expected exception was not thrown');

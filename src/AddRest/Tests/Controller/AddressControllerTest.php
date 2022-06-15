@@ -11,8 +11,9 @@ use Imrei\AddRest\Exceptions\Http\HttpNotFoundException;
 use Imrei\AddRest\Components\Request;
 use Imrei\AddRest\Components\Response;
 use Imrei\AddRest\View\Interfaces\Renderable;
+use PHPUnit\Framework\TestCase;
 
-class AddressControllerTest extends \PHPUnit_Framework_TestCase
+class AddressControllerTest extends TestCase
 {
     /**
      * Build a mock address service without running the constructor
@@ -98,7 +99,7 @@ class AddressControllerTest extends \PHPUnit_Framework_TestCase
             ;
         }
 
-        $this->setExpectedException(HttpNotFoundException::class);
+        $this->expectException(HttpNotFoundException::class);
 
         $request = new Request([], $getParams);
 

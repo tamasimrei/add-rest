@@ -5,11 +5,12 @@
 namespace Imrei\AddRest\Tests\Components;
 
 use Imrei\AddRest\Components\Response;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Testing the Response class
  */
-class ResponseTest extends \PHPUnit_Framework_TestCase
+class ResponseTest extends TestCase
 {
     /**
      * @runInSeparateProcess

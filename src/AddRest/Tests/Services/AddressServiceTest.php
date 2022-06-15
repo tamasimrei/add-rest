@@ -7,8 +7,9 @@ namespace Imrei\AddRest\Tests\Services;
 use Imrei\AddRest\Services\AddressService;
 use Imrei\AddRest\Model\Entity\Address;
 use Imrei\AddRest\Model\Repository\AddressRepository;
+use PHPUnit\Framework\TestCase;
 
-class AddressServiceTest extends \PHPUnit_Framework_TestCase
+class AddressServiceTest extends TestCase
 {
     public function testConvertToArray()
     {
