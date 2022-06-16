@@ -3,7 +3,7 @@ Project AddRest
 
 The simplest (was-to-be) RESTful application for practicing coding skills.
 
-Started up as a technical test for a job interview, then decided
+Started up as a technical test for a job interview, the main requirement being not using frameworks or libraries; then I decided
 to put it up on GitHub, making it public.
 
 Feel free to use any ideas or bits and pieces from this code, I'm also open
