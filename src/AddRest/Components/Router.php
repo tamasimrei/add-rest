@@ -1,7 +1,9 @@
 <?php
+
 /**
  * @author Tamas Imrei <tamas.imrei@gmail.com>
  */
+
 namespace Imrei\AddRest\Components;
 
 use Imrei\AddRest\Exceptions\Http\HttpNotFoundException;

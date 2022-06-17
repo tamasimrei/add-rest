@@ -1,7 +1,9 @@
 <?php
+
 /**
  * @author Tamas Imrei <tamas.imrei@gmail.com>
  */
+
 namespace Imrei\AddRest\Tests\Model\Entity;
 
 use Imrei\AddRest\Model\Entity\Address;

@@ -1,7 +1,9 @@
 <?php
+
 /**
  * @author Tamas Imrei <tamas.imrei@gmail.com>
  */
+
 namespace Imrei\AddRest\View;
 
 use Imrei\AddRest\View\Interfaces\Renderable;

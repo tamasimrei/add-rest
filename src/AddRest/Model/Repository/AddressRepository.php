@@ -1,7 +1,9 @@
 <?php
+
 /**
  * @author Tamas Imrei <tamas.imrei@gmail.com>
  */
+
 namespace Imrei\AddRest\Model\Repository;
 
 use Imrei\AddRest\Model\Entity\Address;
@@ -42,7 +44,7 @@ class AddressRepository
 
         // Fetch directly into an Entity object
         $statement->setFetchMode(
-            \PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE,
+            \PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE,
             Address::class
         );
         $address = $statement->fetch();
