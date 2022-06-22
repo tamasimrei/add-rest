@@ -7,6 +7,9 @@ cd $PARENT
 # stop on any errors
 set -e
 
+echo Running specs
+bin/phpspec run
+
 echo Running unit tests
 XDEBUG_MODE=coverage bin/phpunit --configuration app/build/phpunit.xml
 
