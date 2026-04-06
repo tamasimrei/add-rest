@@ -16,7 +16,7 @@ This is definitely a work in progress.
 Requirements
 ------------
 
-- PHP v5.5, or newer
+- PHP v7.4, or newer
 - SQLite 3 PHP extension
 - Composer
 - XDebug PHP extension for test coverage generation and some minor tests
