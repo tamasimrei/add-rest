@@ -1,7 +1,10 @@
 To Do
 =====
 
+- address possible collision of storing a reusable in the container
 - implement PSR-7 interfaces with the Request and Response classes
+- add HTTP status code support to the Response class
 - add support for inline parameters in the router, e.g. /address/{id}
 - add CRUD methods to service and repository
 - add RESTful API controller methods and routes for CRUD service methods
+- tidy up dependencies (e.g. pin a version to each component)
